@@ -12,9 +12,37 @@ namespace CronometroTaller1
 {
     public partial class Cronometro: Form
     {
+
         public Cronometro()
         {
             InitializeComponent();
         }
+
+        private void btnDarkWhiteMode_Click(object sender, EventArgs e)
+        {
+            if ( Cronometro.ActiveForm.BackColor == Color.Black )
+            {
+                btnDarkWhiteMode.Text = "Dark Mode";
+                btnDarkWhiteMode.ForeColor = Color.Black;
+                Cronometro.ActiveForm.BackColor = Color.White;
+                txtPantalla.ForeColor = Color.Black;
+                btnIniciar.FlatAppearance.MouseOverBackColor = Color.White;
+                btnPausar.FlatAppearance.MouseOverBackColor = Color.White;
+                btnReiniciar.FlatAppearance.MouseOverBackColor = Color.White;
+
+            } else if (Cronometro.ActiveForm.BackColor == Color.White)
+            {
+                btnDarkWhiteMode.Text = "Light Mode";
+                btnDarkWhiteMode.ForeColor = Color.White;
+                Cronometro.ActiveForm.BackColor = Color.Black;
+                txtPantalla.ForeColor = Color.White;
+                btnIniciar.FlatAppearance.MouseOverBackColor = Color.Black;
+                btnPausar.FlatAppearance.MouseOverBackColor = Color.Black;
+                btnReiniciar.FlatAppearance.MouseOverBackColor = Color.Black;
+            }
+            
+
+        }
     }
+
 }
