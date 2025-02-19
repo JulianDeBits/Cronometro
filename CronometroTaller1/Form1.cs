@@ -12,7 +12,11 @@ namespace CronometroTaller1
 {
     public partial class Cronometro: Form
     {
-
+        private int segundos = 0;
+        private int minutos = 0;
+        private int horas = 0;
+        private bool corriendo = false;
+        private bool pausado = false;
         public Cronometro()
         {
             InitializeComponent();
