@@ -62,6 +62,7 @@
             this.btnPausar.Size = new System.Drawing.Size(60, 60);
             this.btnPausar.TabIndex = 1;
             this.btnPausar.UseVisualStyleBackColor = true;
+            this.btnPausar.Click += new System.EventHandler(this.btnPausar_Click);
             // 
             // btnIniciar
             // 
@@ -80,6 +81,7 @@
             this.btnIniciar.Size = new System.Drawing.Size(60, 60);
             this.btnIniciar.TabIndex = 2;
             this.btnIniciar.UseVisualStyleBackColor = true;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // btnReiniciar
             // 
@@ -98,6 +100,7 @@
             this.btnReiniciar.Size = new System.Drawing.Size(60, 60);
             this.btnReiniciar.TabIndex = 3;
             this.btnReiniciar.UseVisualStyleBackColor = true;
+            this.btnReiniciar.Click += new System.EventHandler(this.btnReiniciar_Click);
             // 
             // btnDarkWhiteMode
             // 
